@@ -1,0 +1,19 @@
+<script>
+    function mul() {
+        if (arguments.length == 0) {
+            return 0;
+    } else if (arguments.length == 1) {
+        return arguments[0];
+    } else {
+        var product = 1;
+        for (var i = 0; i < arguments.length; i++) {
+            product *= arguments[i];
+        }
+        return product;
+    }
+}
+console.log("Multiplication is: " + mul());
+console.log("Multiplication is: " + mul(10));
+console.log("Multiplication is: " + mul(10, 20));
+console.log("Multiplication is: " + mul(10, 20, 30, 40, 50, ));
+</script>
